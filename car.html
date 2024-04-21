@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/Empty.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/header.png" alt="">
+    </div>
+    <div class="cont">
+        <div class="desc">
+            <h1 class="car-header"></h1>
+            <p class="car-description"></p>
+            <h2 class="car-header">ВЫБЕРИТЕ ЦВЕТ, ЧТОБЫ ОСУЩЕСТВИТЬ ДОСТАВКУ</h2>
+            <div class="colors">
+                <div class="circle red"></div>
+                <div class="circle pink"></div>
+                <div class="circle yellow"></div>
+                <div class="circle orange"></div>
+                <div class="circle green"></div>
+                <div class="circle blue"></div>
+                <div class="circle black"></div>
+                <div class="circle white"></div>
+            </div>
+            <input hidden type="checkbox" name="cb-col" id="col">
+            <b><p class="car-description">Характеристики транспорта</p></b>
+            <p id="max-speed" class="car-description">Максимальная скорость:&emsp;&emsp;&emsp;</p>
+            <p id="acceleration" class="car-description">Ускорение:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+            <p id="braking" class="car-description">Торможение:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+            <p id="handling" class="car-description">Отзывчивость управления:&emsp;&emsp;</p>
+            <button class="disabled">ЗАКАЗАТЬ</button>
+        </div>
+        <div id="images" class="images">
+        </div>
+    </div>
+    <script type="module" src="car.js"></script>
+</body>
+</html>
