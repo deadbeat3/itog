@@ -17,14 +17,14 @@
             <p class="car-description"></p>
             <h2 class="car-header">ВЫБЕРИТЕ ЦВЕТ, ЧТОБЫ ОСУЩЕСТВИТЬ ДОСТАВКУ</h2>
             <div class="colors">
-                <div class="circle red"></div>
-                <div class="circle pink"></div>
-                <div class="circle yellow"></div>
-                <div class="circle orange"></div>
-                <div class="circle green"></div>
-                <div class="circle blue"></div>
-                <div class="circle black"></div>
-                <div class="circle white"></div>
+                <div id="красный" class="circle red"></div>
+                <div id="розовый" class="circle pink"></div>
+                <div id="жёлтый" class="circle yellow"></div>
+                <div id="оранжевый" class="circle orange"></div>
+                <div id="зелёный" class="circle green"></div>
+                <div id="синий" class="circle blue"></div>
+                <div id="чёрный" class="circle black"></div>
+                <div id="белый" class="circle white"></div>
             </div>
             <input hidden type="checkbox" name="cb-col" id="col">
             <b><p class="car-description">Характеристики транспорта</p></b>
@@ -37,6 +37,9 @@
         <div id="images" class="images">
         </div>
     </div>
+    <button class="sort">Сортировать по цене --</button>
+    <div class="list"></div>
     <script type="module" src="car.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

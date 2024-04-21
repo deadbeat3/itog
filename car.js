@@ -35,15 +35,18 @@ if (car[0].Image2 != null) document.getElementById('images').append(img2)
 if (car[0].Image3 != null) document.getElementById('images').append(img3)
 
 const orderCar = () => {
+    const color = document.querySelector('div.selected').id
     cont.innerHTML = ''
     const p = document.createElement('p')
-    p.textContent = 'Ваш ' + localStorage.getItem('carToLoad') +' будет доставлен в ближайшее время'
+    p.textContent = 'Ваш ' + color + ' ' + localStorage.getItem('carToLoad') +' будет доставлен в ближайшее время'
     p.classList.add('car-description')
     p.style.width = 'fit-content'
     p.style.margin = 'auto'
+    p.style.fontSize = '30px'
     p.style.fontWeight = '600'
 
     cont.append(p)
+    window.scrollTo(0,0)
 }
 
 checkBox.addEventListener('click', function(){

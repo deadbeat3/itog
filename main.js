@@ -6,6 +6,7 @@ checkForAnim()
 
 function loadCars(){
     for (let car of cars){
+        if (car.Name === document.title) continue
         const item = document.createElement('div'),
             name = car.Name,
             price = car.Price,
